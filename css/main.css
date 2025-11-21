@@ -164,6 +164,82 @@ main {
     opacity: 0.7;
 }
 
+/* Praise quotes section */
+.praise-section {
+    margin: calc(var(--spacing) * 2) 0;
+}
+
+.praise-section h3 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: var(--spacing);
+    text-transform: lowercase;
+    letter-spacing: 0.05em;
+}
+
+.praise-section blockquote {
+    margin: var(--spacing) 0;
+    padding-left: 1rem;
+    border-left: 2px solid #ddd;
+    font-style: italic;
+}
+
+.praise-section blockquote p {
+    margin-bottom: 0.5rem;
+}
+
+.praise-section blockquote cite {
+    display: block;
+    font-style: normal;
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+.praise-section blockquote cite a {
+    color: #666;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+.praise-section blockquote cite a:hover {
+    border-bottom-color: #666;
+}
+
+/* CV page styles */
+.cv-content {
+    max-width: 700px;
+}
+
+.cv-year {
+    margin-bottom: calc(var(--spacing) * 1.5);
+}
+
+.cv-year h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 0.75rem;
+    text-transform: lowercase;
+    letter-spacing: 0.05em;
+}
+
+.cv-entries {
+    list-style: none;
+    padding-left: 0;
+}
+
+.cv-entries li {
+    margin-bottom: 0.75rem;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.cv-entries li::before {
+    content: "–";
+    position: absolute;
+    left: 0;
+}
+
 .page-content .social-icon {
     border-bottom: none;
 }
