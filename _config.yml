@@ -1,0 +1,13 @@
+title: Portfolio
+description: Writer and Musician
+baseurl: ""
+url: ""
+
+# GitHub Pages settings
+plugins:
+  - jekyll-feed
+
+# Exclude from processing
+exclude:
+  - README.md
+  - .gitignore

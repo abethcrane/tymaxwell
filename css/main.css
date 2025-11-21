@@ -1,0 +1,185 @@
+/* CSS Variables for easy customization */
+:root {
+    --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --text-color: #333;
+    --link-color: #000;
+    --link-hover: #666;
+    --bg-color: #fff;
+    --max-width: 800px;
+    --spacing: 1.5rem;
+}
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    line-height: 1.6;
+    padding: var(--spacing);
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: var(--spacing);
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    text-transform: lowercase;
+}
+
+/* Navigation */
+nav {
+    margin-bottom: calc(var(--spacing) * 2);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: var(--link-color);
+    text-decoration: none;
+    text-transform: lowercase;
+    font-size: 0.95rem;
+    letter-spacing: 0.05em;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: var(--link-hover);
+}
+
+/* Main content */
+main {
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+/* Homepage */
+.home-content {
+    text-align: center;
+}
+
+.photo-container {
+    margin-bottom: calc(var(--spacing) * 1.5);
+}
+
+.profile-photo {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 0;
+    display: block;
+    margin: 0 auto;
+}
+
+.bio {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.bio p {
+    margin-bottom: 1rem;
+}
+
+.intro {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Page content */
+.page-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.page-content h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: var(--spacing);
+    text-transform: lowercase;
+    letter-spacing: 0.05em;
+}
+
+.page-content p {
+    margin-bottom: 1rem;
+}
+
+.links-list {
+    list-style: none;
+    margin-top: var(--spacing);
+}
+
+.links-list li {
+    margin-bottom: 0.75rem;
+}
+
+.links-list a {
+    color: var(--link-color);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+.links-list a:hover {
+    border-bottom-color: var(--link-color);
+}
+
+.page-content a {
+    color: var(--link-color);
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+}
+
+.page-content a:hover {
+    opacity: 0.7;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: calc(var(--spacing) * 3);
+    padding-top: var(--spacing);
+    border-top: 1px solid #eee;
+    font-size: 0.875rem;
+    color: #666;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+    body {
+        padding: 1rem;
+    }
+    
+    header h1 {
+        font-size: 1.5rem;
+    }
+    
+    nav ul {
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .profile-photo {
+        max-width: 100%;
+    }
+    
+    .intro {
+        font-size: 1.1rem;
+    }
+}
