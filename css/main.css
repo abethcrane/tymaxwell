@@ -164,12 +164,18 @@ main {
     opacity: 0.7;
 }
 
+.page-content .social-icon {
+    border-bottom: none;
+}
+
 /* Social icons */
 .social-icons {
     display: flex;
     gap: 1.5rem;
     flex-wrap: wrap;
     margin-top: 1rem;
+    list-style: none;
+    padding: 0;
 }
 
 .social-icon {
@@ -184,10 +190,8 @@ main {
     opacity: 0.6;
 }
 
-.social-icon svg {
-    width: 24px;
-    height: 24px;
-    display: block;
+.social-icon i {
+    color: var(--link-color);
 }
 
 /* Footer */
