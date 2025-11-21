@@ -247,8 +247,9 @@ main {
 /* Social icons */
 .social-icons {
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
     flex-wrap: wrap;
+    justify-content: center;
     margin-top: 1rem;
     list-style: none;
     padding: 0;
